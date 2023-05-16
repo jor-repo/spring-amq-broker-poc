@@ -24,7 +24,7 @@ public class ApplicationContext {
     @Bean
     public ActiveMQConnectionFactory connectionFatory(){
         ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory();
-        factory.setBrokerURL("tcp://ex-aao-amq-hdls-svc.amq-broker.svc.cluster.local:61616");
+        factory.setBrokerURL("vm://ex-aao-amq-hdls-svc.amq-broker.svc.cluster.local:61616");
         return factory;
     }
 
